@@ -1,0 +1,40 @@
+# Project: Project1
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = inhal.o VECTOR3D.o TIMER.o CUBE_GRID.o COLOR.o
+LINKOBJ  = inhal.o VECTOR3D.o TIMER.o CUBE_GRID.o COLOR.o
+LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc -lopengl32 -lfreeglut -lglu32 -lwinmm
+INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = inhal.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+inhal.o: inhal.cpp
+	$(CPP) -c inhal.cpp -o inhal.o $(CXXFLAGS)
+
+VECTOR3D.o: VECTOR3D.cpp
+	$(CPP) -c VECTOR3D.cpp -o VECTOR3D.o $(CXXFLAGS)
+
+TIMER.o: TIMER.cpp
+	$(CPP) -c TIMER.cpp -o TIMER.o $(CXXFLAGS)
+
+CUBE_GRID.o: CUBE_GRID.cpp
+	$(CPP) -c CUBE_GRID.cpp -o CUBE_GRID.o $(CXXFLAGS)
+
+COLOR.o: COLOR.cpp
+	$(CPP) -c COLOR.cpp -o COLOR.o $(CXXFLAGS)

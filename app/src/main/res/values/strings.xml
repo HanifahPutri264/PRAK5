@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">POST4</string>
+    <string-array name="status_pernikahan">
+        <item>Belum Menikah</item>
+        <item>Sudah Menikah</item>
+    </string-array>
+
+    <string-array name="status_pekerjaan">
+        <item>Pelajar</item>
+        <item>Karyawan</item>
+        <item>Wiraswasta</item>
+        <item>Lainnya</item>
+    </string-array>
+
+</resources>
