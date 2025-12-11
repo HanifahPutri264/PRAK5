@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "472993572026",
+    "firebase_url": "https://postpmob8-49652-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "postpmob8-49652",
+    "storage_bucket": "postpmob8-49652.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:472993572026:android:e7ed5589674d2d4e838e83",
+        "android_client_info": {
+          "package_name": "com.example.prakpmob8"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFOnwR4pe-V8HcOom4WBEP6wVfnfRPlXU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
